@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Manage Your Team's Project From Anywhere | Trello",
   description: "trello.com",
+  icons: {
+    icon: './trello_logo.png',
+  }
 };
 
 export default function RootLayout({

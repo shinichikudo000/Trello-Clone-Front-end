@@ -1,5 +1,5 @@
 import Link from "next/link";
-import trelloImage from "../../img/trello.png";
+import trelloImage from "../img/trello.png";
 
 export default function Navbar() {
     return (
