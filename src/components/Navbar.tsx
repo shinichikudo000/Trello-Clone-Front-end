@@ -20,8 +20,9 @@ export default function Navbar() {
             setAccordion(id)
         }
     }
+    //if the window witdh is less than 990 the  body data-accordion will be close
     return (
-        <header className="fixed w-full z-100">
+        <header className="fixed w-full z-50">
             <div className={`w-full hover:shadow-navShadow h-[70px] lg:h-[60px] bg-white ${accordion !== null ? 'shadow-navShadow' : ''}`}>
                 <div className="max-w-[1320px] mx-auto flex items-stretch h-full">
                     <Link href={''}>
@@ -46,8 +47,8 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            <div>
-                <FeaturesContent />
+            <div className="w-full bg-white shadow-navContentShadow hidden lg:block">
+                { accordion === 'features' && <FeaturesContent />}
             </div>
         </header>
     )

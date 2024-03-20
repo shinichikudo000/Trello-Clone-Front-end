@@ -27,6 +27,10 @@ const config = {
       colors: {
         'blueButton': '#0066FF',
         'blueButtonHover': '#0747A6',
+        'accordionPurple': '#eae6ff66',
+        'borderWhiteContent': '#dfe1e6',
+        'borderPurpleContent': '#998dd9',
+        'buttonPurpleBorder': '#6554c0',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -82,7 +86,15 @@ const config = {
       },
       boxShadow: {
         'navShadow': '0px 0.5rem 1rem 0px rgba(9, 30, 66, 0.15)',
+        'navContentShadow': 'rgba(9, 30, 66, 0.15) 0px 1.5rem 1rem -1rem inset'
       },
+      width: {
+        'purpleContent': 'calc(-200px + 50vw)',
+        'whiteContent': 'calc(200px + 50vw)',
+      },
+      margin: {
+        'leftPurpleContent': 'calc(40px - 1rem)'
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
