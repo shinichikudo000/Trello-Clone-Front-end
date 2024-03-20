@@ -2,6 +2,7 @@
 import Link from "next/link";
 import trelloImage from "../img/trello.png";
 import { useState } from "react";
+import FeaturesContent from "./FeaturesContent";
 
 export default function Navbar() {
     const [accordion, setAccordion] = useState(null)
@@ -46,7 +47,7 @@ export default function Navbar() {
                 </div>
             </div>
             <div>
-                
+                <FeaturesContent />
             </div>
         </header>
     )
