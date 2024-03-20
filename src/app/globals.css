@@ -81,3 +81,10 @@ html {
   box-sizing: border-box;
 }
 
+body[data-accordion="open"] {
+  overflow-y: hidden;
+}
+
+body[data-accordion="close"] {
+  overflow-y: auto;
+}
