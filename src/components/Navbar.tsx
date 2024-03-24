@@ -41,7 +41,7 @@ export default function Navbar() {
     ]
     return (
         <header className="fixed w-full z-50">
-            <div className={`w-full hover:shadow-navShadow h-[70px] lg:gih-[60px] bg-white ${accordion !== null ? 'shadow-navShadow' : ''}`}>
+            <div className={`w-full hover:shadow-navShadow h-[70px] lg:h-[60px] bg-white ${accordion !== null ? 'shadow-navShadow' : ''}`}>
                 <div className="max-w-[1320px] mx-auto flex items-stretch h-full">
                     <Link href={''}>
                         <img src={trelloImage.src} alt="trello" className="h-full"/>
