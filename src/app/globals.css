@@ -83,8 +83,10 @@ html {
 
 body[data-accordion="open"] {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 body[data-accordion="close"] {
   overflow-y: auto;
+  overflow-x: hidden;
 }
