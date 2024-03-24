@@ -3,6 +3,7 @@ import Link from "next/link";
 import trelloImage from "../img/trello.png";
 import { useState } from "react";
 import FeaturesContent from "./FeaturesContent";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Navbar() {
     const [accordion, setAccordion] = useState(null)
@@ -21,6 +22,23 @@ export default function Navbar() {
         }
     }
     //if the window witdh is less than 990 the  body data-accordion will be close
+    const navBarItems = [
+        {
+            name: "Features"
+        },
+        {
+            name: "Solutions"
+        },
+        {
+            name: "Plan"
+        },
+        {
+            name: "Pricing"
+        },
+        {
+            name: "Resources"
+        },
+    ]
     return (
         <header className="fixed w-full z-50">
             <div className={`w-full hover:shadow-navShadow h-[70px] lg:gih-[60px] bg-white ${accordion !== null ? 'shadow-navShadow' : ''}`}>
@@ -29,12 +47,23 @@ export default function Navbar() {
                         <img src={trelloImage.src} alt="trello" className="h-full"/>
                     </Link>
                     <div className="hidden lg:flex h-full items-center justify-center">
-                        <div className="flex items-stretch">
-                            <div id="features" onClick={onClickAccordion} className="cursor-pointer pt-5 px-4 pb-4">Features</div>
-                            <div id="solutions" onClick={onClickAccordion} className="cursor-pointer pt-5 px-4 pb-4">Solutions</div>
-                            <div id="plans" onClick={onClickAccordion} className="cursor-pointer pt-5 px-4 pb-4">Plan</div>
-                            <div id="pricing" onClick={onClickAccordion} className="cursor-pointer pt-5 px-4 pb-4">Pricing</div>
-                            <div id="resources" onClick={onClickAccordion} className="cursor-pointer pt-5 px-4 pb-4">Resources</div>
+                        <div className="flex items-stretch h-full">
+                            {
+                                navBarItems.map((items) => {
+                                    return <Link href={items.name === 'Pricing' ? '/pricing' : ''}
+                                    id={items.name} 
+                                    key={items.name} 
+                                    onClick={onClickAccordion} 
+                                    className={`relative cursor-pointer pt-5 px-4 pb-4 hover:text-[#0066FF] h-full ${items.name === accordion ? 'text-[#0066FF]' : ''}`}>
+                                        {items.name}
+                                        {
+                                            items.name === accordion ? (
+                                                <motion.div className="navUnderline" layoutId="navUnderline"/>
+                                            ) : null
+                                        }
+                                    </Link>
+                                })
+                            }
                         </div>
                     </div>
                     <div className="hidden ml-auto lg:flex items-stretch">
@@ -47,9 +76,11 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            <div className="w-full bg-white shadow-navContentShadow hidden lg:block">
-                { accordion === 'features' && <FeaturesContent />}
-            </div>
+            <AnimatePresence>
+                <div className="w-full bg-white shadow-navContentShadow hidden lg:block">
+                        { accordion === 'Features' && <FeaturesContent />}
+                </div>
+            </AnimatePresence>
         </header>
     )
 }
