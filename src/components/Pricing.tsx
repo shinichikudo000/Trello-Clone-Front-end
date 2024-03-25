@@ -84,29 +84,84 @@ export default function Pricing() {
                     pricingItems.map((item, index) => {
                         return (
                             <>
-                                <div className={`price-order-${(index + 1).toString()} px-4 pt-6 text-base font-medium border-x border-t ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}`} key={index + 1}
+                                <div className={`price-order-${(index + 1).toString()} 
+                                        px-4 
+                                        pt-6 
+                                        text-base 
+                                        font-medium 
+                                        border-x 
+                                        border-t 
+                                        ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
+                                    `} 
+                                    key={index + 1}
                                     >
                                         {item.name.toUpperCase()}
                                 </div>
-                                <div className={`price-order-${(index + 5).toString()} px-4 pt-6 border-x border-[#DFE1E6]`} key={index + 5}
+                                <div className={`price-order-${(index + 5).toString()} 
+                                        px-4 
+                                        pt-6 
+                                        border-x 
+                                        ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
+                                    `} 
+                                    key={index + 5}
                                     >
                                     <h1 className="text-base mb-2">$<span className="text-5xl font-medium">{item.price}</span>USD</h1>
                                     <p className="text-xs text-[#505F79]">{item.description}</p>
                                 </div>
-                                <div className={`price-order-${(index + 9).toString()} px-4 pt-6 border-x border-[#DFE1E6]`} key={index + 9}
+                                <div className={`price-order-${(index + 9).toString()} 
+                                        px-4 
+                                        pt-6 
+                                        border-x 
+                                        ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
+                                    `} 
+                                    key={index + 9}
                                     >
                                     {item.description}
                                 </div>
-                                <div className={`price-order-${(index + 13).toString()} px-4 pt-6 border-x border-[#DFE1E6]`} key={index + 13}
+                                <div className={`price-order-${(index + 13).toString()} 
+                                        px-4 
+                                        pt-6 
+                                        border-x 
+                                        ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
+                                    `} 
+                                    key={index + 13}
                                     >
                                     {item.button}
                                 </div>
-                                <div className={`price-order-${(index + 17).toString()} px-4 pt-6 border-x border-[#DFE1E6]`} key={index + 17}
+                                <div className={`price-order-${(index + 17).toString()} 
+                                        px-4 
+                                        pt-6 
+                                        border-x
+                                        ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
+                                    `} 
+                                    key={index + 17}
                                     >
-                                    <h1>{item.inclusionTitle}</h1>
-                                    <p>{item.inclusions}</p>
+                                    <div className="
+                                        w-full
+                                        lg:border-t
+                                        lg:pt-5
+                                        lg:border-t-[#DFE1E6]">
+                                        <h1 className="
+                                            text-base
+                                            font-medium
+                                            mb-2">{item.inclusionTitle.toUpperCase()}</h1>
+                                        <p>{item.inclusions}</p>
+                                    </div>
                                 </div>
-                                <div className={`price-order-${(index + 21).toString()} px-4 pt-6 mb-4 border-x border-b border-[#DFE1E6]`} key={index + 21}
+                                <div className={`price-order-${(index + 21).toString()} 
+                                        px-4 
+                                        pt-6
+                                        pb-8
+                                        mb-4 
+                                        border-x 
+                                        border-b
+                                        text-center
+                                        underline
+                                        text-[#0052CC]
+                                        font-base
+                                        ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
+                                    `} 
+                                    key={index + 21}
                                     >
                                     {
                                         item.name === 'free' ? '' : (
