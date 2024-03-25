@@ -79,35 +79,35 @@ export default function Pricing() {
     // n*4 for order
     return (
         <div className="px-4 mx-auto w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px]">
-            <div className="w-full grid grid-cols-4">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-4">
                 {
                     pricingItems.map((item, index) => {
                         return (
                             <>
-                                <div className=''
-                                    style={{order: 1 + index}}>
-                                        {item.name}
+                                <div className={`price-order-${(index + 1).toString()} px-4 pt-6 text-base font-medium border-x border-t ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}`} key={index + 1}
+                                    >
+                                        {item.name.toUpperCase()}
                                 </div>
-                                <div className='' 
-                                    style={{order: 5 + index}}>
-                                    <h1>{item.price}</h1>
-                                    <p>{item.description}</p>
+                                <div className={`price-order-${(index + 5).toString()} px-4 pt-6 border-x border-[#DFE1E6]`} key={index + 5}
+                                    >
+                                    <h1 className="text-base mb-2">$<span className="text-5xl font-medium">{item.price}</span>USD</h1>
+                                    <p className="text-xs text-[#505F79]">{item.description}</p>
                                 </div>
-                                <div className='' 
-                                    style={{order: 9 + index}}>
+                                <div className={`price-order-${(index + 9).toString()} px-4 pt-6 border-x border-[#DFE1E6]`} key={index + 9}
+                                    >
                                     {item.description}
                                 </div>
-                                <div className=''
-                                    style={{order: 13 + index}}>
+                                <div className={`price-order-${(index + 13).toString()} px-4 pt-6 border-x border-[#DFE1E6]`} key={index + 13}
+                                    >
                                     {item.button}
                                 </div>
-                                <div className='' 
-                                    style={{order: 17 + index}}>
+                                <div className={`price-order-${(index + 17).toString()} px-4 pt-6 border-x border-[#DFE1E6]`} key={index + 17}
+                                    >
                                     <h1>{item.inclusionTitle}</h1>
                                     <p>{item.inclusions}</p>
                                 </div>
-                                <div className='' 
-                                    style={{order: 21 + index}}>
+                                <div className={`price-order-${(index + 21).toString()} px-4 pt-6 mb-4 border-x border-b border-[#DFE1E6]`} key={index + 21}
+                                    >
                                     {
                                         item.name === 'free' ? '' : (
                                             <Link href=''>Learn more about {item.name}</Link>

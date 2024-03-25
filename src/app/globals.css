@@ -99,3 +99,78 @@ body[data-accordion="close"] {
   height: 2px;
   background: #0066FF;
 }
+
+@media(min-width: 990px){
+  .price-order-1 {
+    order: 1;
+  }
+  .price-order-2 {
+    order: 2;
+  }
+  .price-order-3 {
+    order: 3;
+  }
+  .price-order-4 {
+    order: 4;
+  }
+  .price-order-5 {
+    order: 5;
+  }
+  .price-order-6 {
+    order: 6;
+  }
+  .price-order-7 {
+    order: 7;
+  }
+  .price-order-8 {
+    order: 8;
+  }
+  .price-order-9 {
+    order: 9;
+  }
+  .price-order-10 {
+    order: 10;
+  }
+  .price-order-11 {
+    order: 11;
+  }
+  .price-order-12 {
+    order: 12;
+  }
+  .price-order-13 {
+    order: 13;
+  }
+  .price-order-14 {
+    order: 14;
+  }
+  .price-order-15 {
+    order: 15;
+  }
+  .price-order-16 {
+    order: 16;
+  }
+  .price-order-17 {
+    order: 17;
+  }
+  .price-order-18 {
+    order: 18;
+  }
+  .price-order-19 {
+    order: 19;
+  }
+  .price-order-20 {
+    order: 20;
+  }
+  .price-order-21 {
+    order: 21;
+  }
+  .price-order-22 {
+    order: 22;
+  }
+  .price-order-23 {
+    order: 23;
+  }
+  .price-order-24 {
+    order: 24;
+  }
+}
