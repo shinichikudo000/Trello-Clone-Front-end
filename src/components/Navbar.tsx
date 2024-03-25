@@ -11,14 +11,16 @@ export default function Navbar() {
     const onClickAccordion = (event: any) => {
         const body = document.body
         const id = event.target.id
-        if(accordion === null && body.getAttribute("data-accordion") === 'close') {
-            body.setAttribute("data-accordion", 'open')
-            setAccordion(id)
-        } else if (accordion === id && body.getAttribute("data-accordion") === 'open') {
-            body.setAttribute("data-accordion", 'close')
-            setAccordion(null)
-        } else if (accordion != id && body.getAttribute("data-accordion") === 'open') {
-            setAccordion(id)
+        if(id !== 'Pricing') {
+            if(accordion === null && body.getAttribute("data-accordion") === 'close') {
+                body.setAttribute("data-accordion", 'open')
+                setAccordion(id)
+            } else if (accordion === id && body.getAttribute("data-accordion") === 'open') {
+                body.setAttribute("data-accordion", 'close')
+                setAccordion(null)
+            } else if (accordion != id && body.getAttribute("data-accordion") === 'open') {
+                setAccordion(id)
+            }
         }
     }
     //if the window witdh is less than 990 the  body data-accordion will be close
