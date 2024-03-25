@@ -1,6 +1,16 @@
 import Link from "next/link"
 
-const pricingItems = [
+interface PricingItemsType {
+    name: string,
+    price: number,
+    priceDescription: string,
+    description: string,
+    button: string,
+    inclusionTitle: string,
+    inclusions: string[]
+}
+
+const pricingItems: PricingItemsType[]= [
     {
         name: 'free',
         price: 0,
@@ -103,15 +113,16 @@ export default function Pricing() {
                                         border-x 
                                         ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
                                     `} 
-                                    key={index + 5}
+                                    key={index + 5} 
                                     >
                                     <h1 className="text-base mb-2">$<span className="text-5xl font-medium">{item.price}</span>USD</h1>
-                                    <p className="text-xs text-[#505F79]">{item.description}</p>
+                                    <p className="text-xs text-[#505F79]">{item.priceDescription}</p>
                                 </div>
                                 <div className={`price-order-${(index + 9).toString()} 
                                         px-4 
                                         pt-6 
-                                        border-x 
+                                        border-x
+                                        text-base
                                         ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
                                     `} 
                                     key={index + 9}
@@ -121,12 +132,19 @@ export default function Pricing() {
                                 <div className={`price-order-${(index + 13).toString()} 
                                         px-4 
                                         pt-6 
-                                        border-x 
+                                        border-x
+                                        flex
+                                        items-start
+                                        text-base
                                         ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
                                     `} 
                                     key={index + 13}
                                     >
-                                    {item.button}
+                                    <Link href={''}>
+                                        <div className="pt-[0.7rem] px-4 pb-[0.8rem] text-[#172B4D] border-[#00B8D9] border rounded-md">
+                                            {item.button}
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className={`price-order-${(index + 17).toString()} 
                                         px-4 
