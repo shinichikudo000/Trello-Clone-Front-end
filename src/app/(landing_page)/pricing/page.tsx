@@ -1,3 +1,4 @@
+import FrequentlyAsked from "@/components/FrequentlyAsked";
 import Pricing from "@/components/Pricing";
 
 export default function PricingPage() {
@@ -13,9 +14,8 @@ export default function PricingPage() {
                     </div>
                 </div>
             </section>
-            <section className="w-full">
-                    <Pricing />
-            </section>
+            <Pricing />
+            <FrequentlyAsked />
         </>
     )
 }
