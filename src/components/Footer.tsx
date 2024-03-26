@@ -40,7 +40,7 @@ export default function Footer() {
             <div className="hidden lg:block mx-auto w-[98%] border-t border-[#505F79]"></div>
             <section className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
                 <div className="lg:flex w-full">
-                    <div className="px-4 lg:pt-4 pb-4 flex gap-4 lg:grow-0">
+                    <div className="px-4 lg:pt-4 pb-4 flex gap-4 lg:grow-0 ml-4 lg:ml-0">
                         <FiGlobe size={20} color="#FFFFFF"/>
                         <form>
                             <Select>
