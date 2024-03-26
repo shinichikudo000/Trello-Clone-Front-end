@@ -78,7 +78,12 @@ export default function PricingItemCard({
                 `}
                 onClick={() => setOpenInclusion(!openInclusion)}
             >
-                <h2 className="flex gap-2"><span className="flex justify-center items-center">{openInclusion === false ? <FaPlus /> : <FaMinus />}</span>See what's included</h2>
+                <h2 className="flex gap-2 pr-4 pb-4 text-xl font-medium">
+                    <span className="flex justify-center items-center">
+                        {openInclusion === false ? <FaPlus /> : <FaMinus />}
+                    </span>
+                        See what's included
+                </h2>
             </div>
             <div className={`price-order-${(index + 17).toString()}
                     ${openInclusion === false ? 'hidden' : 'block'}
@@ -103,7 +108,7 @@ export default function PricingItemCard({
                         {
                             item.inclusions.map((value) => {
                                 return <div key={value} className="flex gap-2 mb-2">
-                                        <span className="flex justify-center items-center"><FaCheck className="min-w-[30px]"/></span>
+                                        <span className="flex justify-center items-center"><FaCheck className="min-w-[30px]" color="#36B37E"/></span>
                                         {value}
                                     </div>
                             })
