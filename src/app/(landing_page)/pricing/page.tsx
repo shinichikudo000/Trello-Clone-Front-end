@@ -16,6 +16,7 @@ export default function PricingPage() {
                 </div>
             </section>
             <Pricing />
+            <FeaturesComparison />
             <FrequentlyAsked />
             <section className="w-full bg-gradient-to-b from-[#E6FCFF] to-white">
                 <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
