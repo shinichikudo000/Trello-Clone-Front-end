@@ -18,11 +18,14 @@ export default function QuestionItem({
                 </span>
                 <h3 className="text-xl md:text-2xl font-medium">{question.question}</h3>
             </div>
-            <div className="w-full px-5 py-4">
-                {
-                    open && (<p className="text-lg">{question.answer}</p>)
-                }
-            </div>
+            {
+                open && (
+                    <div className="w-full px-5 py-4">
+                        <p className="text-lg">{question.answer}</p>
+                    </div>
+                )
+            }
+
         </div>
     )
 }
