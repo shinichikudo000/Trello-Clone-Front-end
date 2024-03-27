@@ -39,7 +39,7 @@ const questions: QuestionType[] = [
 export default function FrequentlyAsked() {
     return (
         <section className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
-            <div className="w-full p-4">
+            <div className="w-full px-4 pt-4 pb-[5rem]">
                 <div className="w-full pb-[3rem]">
                     <h2 className="text-2xl md:text-[2.25rem] w-full text-center">Frequently asked question</h2>
                 </div>
