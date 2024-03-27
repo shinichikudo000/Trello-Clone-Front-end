@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function PricingPage() {
     return (
         <>
-            <section className="w-full">
+            <section className="w-full bg-gradient-to-b from-[#EAE6FF] to-white">
                 <div className="px-4 mx-auto w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px]">
                     <div className="flex justify-center">
                         <div className="pt-[5rem] px-4 pb-[3rem] w-full md:w-[67%] text-center">

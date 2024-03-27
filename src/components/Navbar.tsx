@@ -4,9 +4,11 @@ import trelloImage from "../img/trello.png";
 import { useState } from "react";
 import FeaturesContent from "./FeaturesContent";
 import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
     const [accordion, setAccordion] = useState(null)
+    const pathname = usePathname()
 
     const onClickAccordion = (event: any) => {
         const body = document.body
@@ -43,7 +45,7 @@ export default function Navbar() {
     ]
     return (
         <header className="fixed w-full z-50">
-            <div className={`w-full hover:shadow-navShadow h-[70px] lg:h-[60px] bg-white ${accordion !== null ? 'shadow-navShadow' : ''}`}>
+            <div className={`w-full lg:hover:shadow-navShadow lg:hover:bg-white h-[70px] lg:h-[60px] ${accordion !== null ? 'shadow-navShadow' : ''} ${pathname === '/pricing' ? 'bg-transparent' : 'bg-white'}`}>
                 <div className="max-w-[1320px] mx-auto flex items-stretch h-full">
                     <Link href={''}>
                         <img src={trelloImage.src} alt="trello" className="h-full"/>
