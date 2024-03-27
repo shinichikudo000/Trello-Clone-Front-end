@@ -71,7 +71,7 @@ export const featuresComparisonItems: featuresComparisonItemsType[] = [
         includedPlans: ['standard', 'premium', 'enterprise']
     }, {
         feature: "Dashboard View",
-        description: " trello's reporting tool lets you access real-time insights and communicate your team's progress in a visual and meaningful way.",
+        description: " Trello's reporting tool lets you access real-time insights and communicate your team's progress in a visual and meaningful way.",
         linkTag: "Learn more",
         link: "",
         includedPlans: ['premium', 'enterprise']

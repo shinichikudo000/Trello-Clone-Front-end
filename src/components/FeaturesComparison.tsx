@@ -27,30 +27,34 @@ export default function FeaturesComparison() {
                         <tbody>
                             {
                                 featuresComparisonItems.map((item) => {
-                                    return <tr className="border-b border-[#DFE1E6]">
-                                                <td className="pr-4 py-5 border-r border-[#DFE1E6]">
+                                    return <tr className="border-t md:border-b border-[#DFE1E6] grid gap-2 md:table-row py-5 md:py-0">
+                                                <td className="md:pr-4 md:py-5 md:border-r border-[#DFE1E6] grid gap-1 md:block">
                                                     <p className="text-base font-bold">{item.feature.toUpperCase()}</p>
                                                     {item.description && <p>{item.description}</p>}
                                                     {item.linkTag && <Link href={''} className="text-[#0052CC] underline">{item.linkTag}</Link>}
                                                 </td>
-                                                <td className="py-5 px-4 border-r border-[#DFE1E6]">
-                                                    <div className="flex justify-center items-center">
-                                                        {item.includedPlans.includes('free') && <FaCheck className="min-w-[30px]" color="#36B37E"/>}
+                                                <td className="md:py-5 md:px-4 md:border-r border-[#DFE1E6]">
+                                                    <div className="flex justify-between md:justify-center md:items-center">
+                                                        <p className="md:hidden text-sm">FREE</p>
+                                                        <span>{item.includedPlans.includes('free') && <FaCheck className="min-w-[30px]" color="#36B37E"/>}</span>
                                                     </div>
                                                 </td>
-                                                <td className="py-5 px-4 border-r border-[#DFE1E6]">
-                                                    <div className="flex justify-center items-center">
-                                                        {item.includedPlans.includes('standard') && <FaCheck className="min-w-[30px]" color="#36B37E"/>}
+                                                <td className="md:py-5 md:px-4 md:border-r border-[#DFE1E6]">
+                                                    <div className="flex justify-between md:justify-center md:items-center">
+                                                        <p className="md:hidden text-sm">STANDARD</p>
+                                                        <span>{item.includedPlans.includes('standard') && <FaCheck className="min-w-[30px]" color="#36B37E"/>}</span>
                                                     </div>
                                                 </td>
-                                                <td className="py-5 px-4 border-r border-[#DFE1E6]">
-                                                    <div className="flex justify-center items-center">
-                                                        {item.includedPlans.includes('premium') && <FaCheck className="min-w-[30px]" color="#36B37E"/>}
+                                                <td className="md:py-5 md:px-4 md:border-r border-[#DFE1E6]">
+                                                    <div className="flex justify-between md:justify-center md:items-center">
+                                                        <p className="md:hidden text-sm">PREMIUM</p>
+                                                        <span>{item.includedPlans.includes('premium') && <FaCheck className="min-w-[30px]" color="#36B37E"/>}</span>
                                                     </div>
                                                 </td>
-                                                <td className="py-5 px-4 border-r border-[#DFE1E6]">
-                                                    <div className="flex justify-center items-center">
-                                                        {item.includedPlans.includes('enterprise') && <FaCheck className="min-w-[30px]" color="#36B37E"/>}
+                                                <td className="md:py-5 md:px-4 md:border-r border-[#DFE1E6]">
+                                                    <div className="flex justify-between md:justify-center md:items-center">
+                                                        <p className="md:hidden text-sm">ENTERPRISE</p>
+                                                        <span>{item.includedPlans.includes('enterprise') && <FaCheck className="min-w-[30px]" color="#36B37E"/>}</span>
                                                     </div>
                                                 </td>
                                             </tr>
