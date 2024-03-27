@@ -18,10 +18,10 @@ export default function FeaturesComparison() {
                         <thead>
                             <tr className="font-normal text-base hidden md:table-row border-b border-[#DFE1E6]">
                                 <th className="text-start md:pb-3 py-5 pr-4">FEATURES</th>
-                                <th className="text-center md:pb-3 py-5 px-4">FREE</th>
-                                <th className="text-center md:pb-3 py-5 px-4">STANDARD</th>
-                                <th className="text-center md:pb-3 py-5 px-4">PREMIUM</th>
-                                <th className="text-center md:pb-3 py-5 px-4">ENTERPRISE</th>
+                                <th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>FREE</th>
+                                <th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>STANDARD</th>
+                                <th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>PREMIUM</th>
+                                <th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>ENTERPRISE</th>
                             </tr>
                         </thead>
                         <tbody>
