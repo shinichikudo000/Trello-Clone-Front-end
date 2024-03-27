@@ -1,3 +1,4 @@
+import FeaturesComparison from "@/components/FeaturesComparison";
 import FrequentlyAsked from "@/components/FrequentlyAsked";
 import Pricing from "@/components/Pricing";
 import Link from "next/link";
