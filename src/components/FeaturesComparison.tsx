@@ -5,6 +5,7 @@ import Link from "next/link";
 import { featuresComparisonItems } from "@/helpers/data";
 import { useEffect, useRef } from "react";
 import { motion, useAnimate, useScroll, useTransform } from "framer-motion";
+import { IoSearch } from "react-icons/io5";
 
 export default function FeaturesComparison() {
     const ref = useRef(null);
@@ -16,14 +17,17 @@ export default function FeaturesComparison() {
     const stickyStyle = useTransform(scrollYProgress, [1, 1], ['sticky', 'block']);
 
     return (
-        <section ref={ref} className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
+        <section ref={ref} className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto p-4">
             <div className="w-full p-4">
-                <div className="w-full flex justify-center items-center">
+                <div className="w-full flex justify-center items-center mb-2">
                     <h2 className="md:text-4xl text-2xl font-medium">Compare our Plans</h2>
                 </div>
                 <div className="grid md:gap-10 gap-6">
                     <div className="w-full flex justify-center items-center">
-                        <Input type='text' placeholder='search' className="bg-[#FAFBFC] border-[#DFE1E6] rounded-md text-base max-w-[22rem] p-2 w-full focus:border-[#091E42] focus:border-2"/>
+                        <div className="relative w-[22rem]">
+                            <Input type='text' placeholder='search' className="bg-[#FAFBFC] border-[#DFE1E6] rounded-md text-base py-2 pr- pl-10 w-full focus:border-[#091E42] focus:border-2" />
+                            <IoSearch className="absolute top-3 left-4"/>
+                        </div>
                     </div>
                     <table className="w-full">
                         <motion.thead style={{ position: stickyStyle }}>
@@ -74,6 +78,10 @@ export default function FeaturesComparison() {
                         </tbody>
                     </table>
                 </div>
+            </div>
+            <div className="w-full mt-16 flex flex-col items-center">
+                <h3 className="text-2xl font-medium mb-2">Didn't find what you were looking for?</h3>
+                <button className="text-base px-4 py-3 border-[#0065FF] border rounded-md hover:bg-[#DEEBFF]">Make a suggestion</button>
             </div>
         </section>
     )
