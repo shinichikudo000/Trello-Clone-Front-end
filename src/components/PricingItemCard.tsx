@@ -64,7 +64,10 @@ export default function PricingItemCard({
                 key={index + 13}
                 >
                 <Link href={''}>
-                    <div className="pt-[0.7rem] px-4 pb-[0.8rem] text-[#172B4D] border-[#00B8D9] border rounded-md">
+                    <div className={`pt-[0.7rem] px-4 pb-[0.8rem] text-[#172B4D] border-[#00B8D9] border rounded-md 
+                        ${item.name === 'premium' ? 'hover:bg-white bg-[#E6FCFF]' : 'hover:bg-[#E6FCFF]'}
+                        `}
+                    >
                         {item.button}
                     </div>
                 </Link>

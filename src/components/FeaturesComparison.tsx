@@ -1,11 +1,22 @@
+'use client'
 import { FaCheck } from "react-icons/fa";
 import { Input } from "./ui/input";
 import Link from "next/link";
 import { featuresComparisonItems } from "@/helpers/data";
+import { useEffect, useRef } from "react";
+import { motion, useAnimate, useScroll, useTransform } from "framer-motion";
 
 export default function FeaturesComparison() {
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: ref,
+      offset: ["start start", "end start"],
+    });
+  
+    const stickyStyle = useTransform(scrollYProgress, [1, 1], ['sticky', 'block']);
+
     return (
-        <section className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
+        <section ref={ref} className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
             <div className="w-full p-4">
                 <div className="w-full flex justify-center items-center">
                     <h2 className="md:text-4xl text-2xl font-medium">Compare our Plans</h2>
@@ -15,15 +26,15 @@ export default function FeaturesComparison() {
                         <Input type='text' placeholder='search' className="bg-[#FAFBFC] border-[#DFE1E6] rounded-md text-base max-w-[22rem] p-2 w-full focus:border-[#091E42] focus:border-2"/>
                     </div>
                     <table className="w-full">
-                        <thead>
-                            <tr className="font-normal text-base hidden md:table-row border-b border-[#DFE1E6]">
-                                <th className="text-start md:pb-3 py-5 pr-4">FEATURES</th>
-                                <th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>FREE</th>
-                                <th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>STANDARD</th>
-                                <th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>PREMIUM</th>
-                                <th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>ENTERPRISE</th>
-                            </tr>
-                        </thead>
+                        <motion.thead style={{ position: stickyStyle }}>
+                            <motion.tr className="font-normal text-base hidden md:table-row border-b border-[#DFE1E6]">
+                                <motion.th className="text-start md:pb-3 py-5 pr-4">FEATURES</motion.th>
+                                <motion.th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>FREE</motion.th>
+                                <motion.th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>STANDARD</motion.th>
+                                <motion.th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>PREMIUM</motion.th>
+                                <motion.th className="text-center md:pb-3 py-5 px-4" style={{width: "15%"}}>ENTERPRISE</motion.th>
+                            </motion.tr>
+                        </motion.thead>
                         <tbody>
                             {
                                 featuresComparisonItems.map((item) => {
