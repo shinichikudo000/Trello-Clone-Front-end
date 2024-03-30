@@ -41,8 +41,8 @@ export default function FeaturesComparison() {
                         </motion.thead>
                         <tbody>
                             {
-                                featuresComparisonItems.map((item) => {
-                                    return <tr className="border-t md:border-b border-[#DFE1E6] grid gap-2 md:table-row py-5 md:py-0">
+                                featuresComparisonItems.map((item, index) => {
+                                    return <tr key={index} className="border-t md:border-b border-[#DFE1E6] grid gap-2 md:table-row py-5 md:py-0">
                                                 <td className="md:pr-4 md:py-5 md:border-r border-[#DFE1E6] grid gap-1 md:block">
                                                     <p className="text-base font-bold">{item.feature.toUpperCase()}</p>
                                                     {item.description && <p>{item.description}</p>}

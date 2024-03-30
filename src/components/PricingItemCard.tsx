@@ -4,6 +4,7 @@ import Link from "next/link"
 import { PricingItemsType } from "./Pricing"
 import { FaCheck, FaPlus, FaMinus} from "react-icons/fa6"
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 
 export default function PricingItemCard({
     index,
@@ -14,6 +15,7 @@ export default function PricingItemCard({
 }) {
 
     const [openInclusion, setOpenInclusion] = useState(false)
+    const pathname = usePathname()
     
     return (
         <>
@@ -72,53 +74,59 @@ export default function PricingItemCard({
                     </div>
                 </Link>
             </div>
-            <div className={`
-                px-4 
-                pt-6 
-                border-x
-                lg:hidden
-                ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
-                `}
-                onClick={() => setOpenInclusion(!openInclusion)}
-            >
-                <h2 className="flex gap-2 pr-4 pb-4 text-xl font-medium">
-                    <span className="flex justify-center items-center">
-                        {openInclusion === false ? <FaPlus /> : <FaMinus />}
-                    </span>
-                        See what's included
-                </h2>
-            </div>
-            <div className={`price-order-${(index + 17).toString()}
-                    ${openInclusion === false ? 'hidden' : 'block'}
-                    lg:block
-                    px-4 
-                    pt-6 
-                    border-x
-                    ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
-                `} 
-                key={index + 17}
-                >
-                <div className="
-                    w-full
-                    lg:border-t
-                    lg:pt-5
-                    lg:border-t-[#DFE1E6]">
-                    <h1 className="
-                        text-base
-                        font-medium
-                        mb-2">{item.inclusionTitle.toUpperCase()}</h1>
-                    <div>
-                        {
-                            item.inclusions.map((value) => {
-                                return <div key={value} className="flex gap-2 mb-2">
-                                        <span className="flex justify-center items-center"><FaCheck className="min-w-[30px]" color="#36B37E"/></span>
-                                        {value}
-                                    </div>
-                            })
-                        }
-                    </div>
-                </div>
-            </div>
+            {
+                pathname === '/pricing' ? (
+                    <>
+                        <div className={`
+                            px-4 
+                            pt-6 
+                            border-x
+                            lg:hidden
+                            ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
+                            `}
+                            onClick={() => setOpenInclusion(!openInclusion)}
+                        >
+                            <h2 className="flex gap-2 pr-4 pb-4 text-xl font-medium">
+                                <span className="flex justify-center items-center">
+                                    {openInclusion === false ? <FaPlus /> : <FaMinus />}
+                                </span>
+                                    See what's included
+                            </h2>
+                        </div>
+                        <div className={`price-order-${(index + 17).toString()}
+                                ${openInclusion === false ? 'hidden' : 'block'}
+                                lg:block
+                                px-4 
+                                pt-6 
+                                border-x
+                                ${item.name === 'premium' ? 'border-[#00B8D9]' : 'border-[#DFE1E6]'}
+                            `} 
+                            key={index + 17}
+                            >
+                            <div className="
+                                w-full
+                                lg:border-t
+                                lg:pt-5
+                                lg:border-t-[#DFE1E6]">
+                                <h1 className="
+                                    text-base
+                                    font-medium
+                                    mb-2">{item.inclusionTitle.toUpperCase()}</h1>
+                                <div>
+                                    {
+                                        item.inclusions.map((value) => {
+                                            return <div key={value} className="flex gap-2 mb-2">
+                                                    <span className="flex justify-center items-center"><FaCheck className="min-w-[30px]" color="#36B37E"/></span>
+                                                    {value}
+                                                </div>
+                                        })
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </>
+                ) : (<></>)
+            }
             <div className={`price-order-${(index + 21).toString()} 
                     px-4 
                     pt-6
