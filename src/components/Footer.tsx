@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="lg:flex w-full">
                     <div className="px-4 w-full pt-4 lg:w-[15%]">
                         <div className="mx-4 mt-6 lg:ml-0 lg:mt-0 flex justify-between lg:flex-col w-full">
-                            <img src={trelloImage.src} alt="trello" className="h-auto"/>
+                            <img src={trelloImage.src} alt="trello" className="max-w-[125px] h-auto"/>
                             <Link href={''} className="text-base">Log in</Link>
                         </div>
                     </div>

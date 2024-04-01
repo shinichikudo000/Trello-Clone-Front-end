@@ -86,7 +86,8 @@ const config = {
       },
       boxShadow: {
         'navShadow': '0px 0.5rem 1rem 0px rgba(9, 30, 66, 0.15)',
-        'navContentShadow': 'rgba(9, 30, 66, 0.15) 0px 1.5rem 1rem -1rem inset'
+        'navContentShadow': 'rgba(9, 30, 66, 0.15) 0px 1.5rem 1rem -1rem inset',
+        'cardShadow': 'rgba(9, 30, 66, 0.15) 0px 0.5rem 1rem 0px'
       },
       width: {
         'purpleContent': 'calc(-200px + 50vw)',
