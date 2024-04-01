@@ -1,5 +1,6 @@
 import Pricing from "@/components/Pricing";
 import Trello101 from "@/components/Trello101";
+import TrelloInAction from "@/components/TrelloInAction";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -36,7 +37,7 @@ export default function LandingPage() {
                 </div>
             </section>
             <Trello101 />
-           
+            <TrelloInAction />
             <Pricing />
         </>
     )
