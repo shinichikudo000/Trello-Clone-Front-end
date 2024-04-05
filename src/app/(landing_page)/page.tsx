@@ -38,6 +38,29 @@ export default function LandingPage() {
             </section>
             <Trello101 />
             <TrelloInAction />
+            <section className="w-full">
+                <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
+                    <div className="lg:flex">
+                        <div className="p-4 lg:pb-[5rem] lg:w-3/4">
+                            <p className="text-xl">No need to start from scratch. Jump-start your workflow with proven playbook designed for different teams. Customize it to make it yours.</p>
+                        </div>
+                        <div className="w-full lg:w-1/4 p-4 pb-[5rem]">
+                            <Link href={""} className="text-base border border-[#0065FF] p-4 rounded-md inline-block hover:bg-[#DEEBFF]">Explore all Use cases</Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="w-full">
+                <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
+                    <div className="w-full pt-[5rem] pb-[3rem] px-4 flex justify-center">
+                        <div className="w-[83.333%] flex flex-col items-center">
+                            <h1 className="text-2xl md:text-4xl mb-2">Trello priced your way</h1>
+                            <p className="text-xl mb-6">Trusted by millions, Trello powers teams all around the world.</p>
+                            <Link href={""} className="text-base bg-blueButton p-4 rounded-md inline-block text-white hover:bg-blueButtonHover">Compare Plans</Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <Pricing />
         </>
     )

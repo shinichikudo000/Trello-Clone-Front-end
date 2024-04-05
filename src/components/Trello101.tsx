@@ -25,7 +25,7 @@ const card: CardType[] = [
 export default function Trello101() {
     const [contentIndex, setContentIndex] = useState(0)
     return (
-        <section className="">
+        <section className="bg-gradient-to-t from-[#E6FCFF] to -white">
             <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-[1rem]">
                 <div className="w-full flex justify-start items-start">
                     <div className="text-wrap w-full md:max-w-[60%] p-4">

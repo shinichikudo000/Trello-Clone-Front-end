@@ -88,16 +88,18 @@ const pricingItems: PricingItemsType[]= [
 export default function Pricing() {
     // n*4 for order
     return (
-        <div className="px-4 mx-auto w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px]">
-            <div className="w-full grid grid-cols-1 lg:grid-cols-4">
-                {
-                    pricingItems.map((item, index) => {
-                        return (
-                            <PricingItemCard item={item} index={index} key={item.name}/>
-                        )
-                    })
-                }
+        <section className="w-full">
+            <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto p-4">
+                <div className="w-full grid grid-cols-1 lg:grid-cols-4">
+                    {
+                        pricingItems.map((item, index) => {
+                            return (
+                                <PricingItemCard item={item} index={index} key={item.name}/>
+                            )
+                        })
+                    }
+                </div>
             </div>
-        </div>
+        </section>
     )
 }

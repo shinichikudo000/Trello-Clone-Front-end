@@ -40,7 +40,7 @@ const card = [
 ]
 export default function TrelloInAction() {
     return ( 
-        <section className="mt-12">
+        <section className="mt-12 mb-8">
             <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-[1rem]">
                 <div className="w-full flex justify-start items-start">
                     <div className="text-wrap w-full md:max-w-[60%] p-4">
