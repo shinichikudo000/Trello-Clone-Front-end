@@ -2,6 +2,7 @@ import DifferentVision from "@/components/DifferentVision";
 import Pricing from "@/components/Pricing";
 import Trello101 from "@/components/Trello101";
 import TrelloInAction from "@/components/TrelloInAction";
+import WaysToGrow from "@/components/WaysToGrow";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -52,6 +53,7 @@ export default function LandingPage() {
                 </div>
             </section>
             <DifferentVision />
+            <WaysToGrow />
             <section className="w-full">
                 <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
                     <div className="w-full pt-[5rem] pb-[3rem] px-4 flex justify-center">

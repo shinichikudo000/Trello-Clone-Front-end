@@ -16,7 +16,7 @@ export default function DifferentVision() {
                                 <img src="https://images.ctfassets.net/rz1oowkt5gyp/5Hb09iiMrK6mSpThW5HS89/f5683a167ad3f74bed4dc7592ae5a002/TrelloBoard_Timeline_2x.png?w=1212&fm=webp" className="object-contain w-full h-auto"/>
                             </div>
                             <div className="w-full lg:w-[45%] lg:px-8">
-                                <h3 className="text-base font-bold mb-2">HIT DEADLINES EVERY TIME</h3>
+                                <h3 className="text-base font-bold mb-6">HIT DEADLINES EVERY TIME</h3>
                                 <p className="text-xl mb-6">From weekly sprints to annual planning, Timeline view keeps all tasks ontrack. Quickly get a glimpse of what's coming down the pipeline and identify any gaps that might impede your team's progress</p>
                                 <Link href={''} className="text-[#0052CC] underline text-xl">Learn more about Timeline View</Link>
                             </div>
@@ -28,7 +28,7 @@ export default function DifferentVision() {
                                 <img src="https://images.ctfassets.net/rz1oowkt5gyp/7sxChS4x6XAcUgDpp4VAZk/25377d162e964f4243e329c447bfd7dc/TrelloBoard_Calendar_2x.png?w=1212&fm=webp" className="object-contain w-full h-auto"/>
                             </div>
                             <div className="w-full lg:w-[45%] lg:px-8">
-                                <h3 className="text-base font-bold mb-2">STAY ON TOP OF TASKS</h3>
+                                <h3 className="text-base font-bold mb-6">STAY ON TOP OF TASKS</h3>
                                 <p className="text-xl mb-6">Start each day without any surprises. Whether scheduling an editorial calendar or staying on top of to-dos, Calendar view is like a crystal ball giving you a clear vision of what work lies ahead</p>
                                 <Link href={''} className="text-[#0052CC] underline text-xl">Learn more about Calendar View</Link>
                             </div>
