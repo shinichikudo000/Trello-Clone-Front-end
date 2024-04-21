@@ -69,11 +69,12 @@ export default function LandingPage() {
             <Pricing />
             <section className="w-full mt-12">
                 <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4 flex justify-center">
-                    <div className="w-full px-4 pt-4 pb-12">
-                        <div className="text-center">
-                            <h3>Join over 2,000,000 teams worlwide that are using Trello to get more done.</h3>
+                    <div className="w-full px-4 pt-4 pb-12 md:pb-[5rem] lg:mx-auto lg:w-[83.33%]">
+                        <div className="text-center mb-6">
+                            <h3 className="text-xl">Join over 2,000,000 teams worlwide that are using Trello to get more done.</h3>
                         </div>
-                        <img src='https://images.ctfassets.net/rz1oowkt5gyp/19rAABnbk8KNNuh3zJzsmr/210fb8ee51dea14595462f844b7c9beb/logos-horizontal-visa-coinbase-john-deere-zoom-grand-hyatt-fender.svg' alt="brand-logos"/>
+                        <img src='https://images.ctfassets.net/rz1oowkt5gyp/19rAABnbk8KNNuh3zJzsmr/210fb8ee51dea14595462f844b7c9beb/logos-horizontal-visa-coinbase-john-deere-zoom-grand-hyatt-fender.svg' alt="brand-logos" className="object-contain w-full h-auto hidden md:block"/>
+                        <img src='https://images.ctfassets.net/rz1oowkt5gyp/35UfB6LGcl6cd3y8K7VB3b/0748eb81ae166a7fb35288e6c413dabc/logos-3x3-visa-coinbase-john-deere-zoom-grand-hyatt-fender.svg' alt="brand-logos" className="object-contain max-w-full h-auto md:hidden mx-auto"/>
                     </div>
                 </div>
             </section>
