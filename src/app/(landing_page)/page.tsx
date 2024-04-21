@@ -1,4 +1,5 @@
 import DifferentVision from "@/components/landingpage_sections/DifferentVision";
+import GetStarted from "@/components/landingpage_sections/GetStarted";
 import Pricing from "@/components/landingpage_sections/Pricing";
 import Trello101 from "@/components/landingpage_sections/Trello101";
 import TrelloInAction from "@/components/landingpage_sections/TrelloInAction";
@@ -76,6 +77,7 @@ export default function LandingPage() {
                     </div>
                 </div>
             </section>
+            <GetStarted />
         </>
     )
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FiGlobe } from "react-icons/fi";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
-import trelloImage from "../img/trello.png";
+import trelloImage from "../../img/trello.png";
 
 export default function Footer() {
     return (

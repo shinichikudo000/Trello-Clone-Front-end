@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import trelloImage from "../img/trello.png";
+import trelloImage from "../../img/trello.png";
 import { useState } from "react";
 import FeaturesContent from "./FeaturesContent";
 import { AnimatePresence, motion } from "framer-motion";
