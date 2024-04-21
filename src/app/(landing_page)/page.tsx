@@ -1,8 +1,8 @@
-import DifferentVision from "@/components/DifferentVision";
-import Pricing from "@/components/Pricing";
-import Trello101 from "@/components/Trello101";
-import TrelloInAction from "@/components/TrelloInAction";
-import WaysToGrow from "@/components/WaysToGrow";
+import DifferentVision from "@/components/landingpage_sections/DifferentVision";
+import Pricing from "@/components/landingpage_sections/Pricing";
+import Trello101 from "@/components/landingpage_sections/Trello101";
+import TrelloInAction from "@/components/landingpage_sections/TrelloInAction";
+import WaysToGrow from "@/components/landingpage_sections/WaysToGrow";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -66,6 +66,16 @@ export default function LandingPage() {
                 </div>
             </section>
             <Pricing />
+            <section className="w-full mt-12">
+                <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4 flex justify-center">
+                    <div className="w-full px-4 pt-4 pb-12">
+                        <div className="text-center">
+                            <h3>Join over 2,000,000 teams worlwide that are using Trello to get more done.</h3>
+                        </div>
+                        <img src='https://images.ctfassets.net/rz1oowkt5gyp/19rAABnbk8KNNuh3zJzsmr/210fb8ee51dea14595462f844b7c9beb/logos-horizontal-visa-coinbase-john-deere-zoom-grand-hyatt-fender.svg' alt="brand-logos"/>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

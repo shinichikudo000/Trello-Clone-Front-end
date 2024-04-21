@@ -1,6 +1,6 @@
 'use client'
 import { FaCheck } from "react-icons/fa";
-import { Input } from "./ui/input";
+import { Input } from "../ui/input";
 import Link from "next/link";
 import { featuresComparisonItems } from "@/helpers/data";
 import { useEffect, useRef } from "react";
