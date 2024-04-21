@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function DifferentVision() {
     return (
-        <section className="bg-gradient-to-l from-[#00B8D9] to-[#0065FF]">
+        <section className="bg-gradient-to-l from-[#00B8D9] to-[#0065FF] relative">
             <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-[1rem]">
                 <div className="w-full">
                     <div className="w-full mx-auto lg:w-2/3 text-center text-white px-4 pt-12 pb-4 md:pb-12">
@@ -38,6 +38,8 @@ export default function DifferentVision() {
             </div>
             <div className="bg-white h-[8rem]">
             </div>
+            <img src="https://images.ctfassets.net/rz1oowkt5gyp/2HisRmboWIdXSYaaUSDzon/dadecff4be8a39bf2cf3cc537bd4d9c1/ViewsBackground_Right_Narrow.svg" alt="" className="object-contain h-[calc(100%-8rem)] w-auto absolute top-0 right-0 hidden lg:block" />
+            <img src="https://images.ctfassets.net/rz1oowkt5gyp/7KgS3XVFhGu3TiclJKloEp/c10aad15fb171a6c245db9cb7910247d/ViewsBackground_Left_Narrow.svg" alt="" className="object-contain h-[calc(100%-8rem)] w-auto absolute top-0 left-0 hidden lg:block" />
         </section>
     )
 }

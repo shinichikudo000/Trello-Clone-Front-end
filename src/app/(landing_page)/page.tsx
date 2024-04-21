@@ -18,26 +18,27 @@ export default function LandingPage() {
                     Accelerate your team's work with Atlassian Intelligence {'\uD83E\uDD16'} (AI) features now in beta!&nbsp;<Link href={''} className="underline text-blueButton">Learn more</Link>.
                 </div>
             </section>
-            <section>
-                <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-[1rem]">
+            <section className="w-full bg-gradient-to-r from-[#5243AA] to-[#ED50B4] relative">
+                <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-[1rem] z-20">
                     <div className="w-full lg:flex relative">
-                        <div className="py-[8rem] px-4 w-full lg:w-1/2 text-center lg:text-start text-wrap">
+                        <div className="py-[8rem] px-4 w-full lg:w-1/2 text-center lg:text-start text-wrap text-white">
                             <h1 className="text-[32px] lg:text-[48px] md:text-[44px] mb-2 md:leading-normal lg:leading-tight">Trello brings all your tasks, teammates, and tools together</h1>
                             <p className="mb-6 text-xl">Keep everything in the same place-even if your team isn't.</p>
                             <div className="flex gap-4 lg:flex lg:justify-start justify-center lg:flex-wrap">
                                 <Input placeholder="Email" type="email" className="p-6 w-[300px] text-base border-[#DFE1E6] focus:border-white hidden md:flex"/>
-                                <button className="text-white p-3 bg-blueButton hover:bg-blueButtonHover rounded-md text-base grow md:grow-0 mb-6">Sign up - it's free</button>
+                                <button className="p-3 bg-blueButton hover:bg-blueButtonHover rounded-md text-base grow md:grow-0 mb-6">Sign up - it's free</button>
                             </div>
                             <div className="group flex gap-2 justify-center lg:justify-start">
                                     <Link href={''} className="underline">Watch video</Link>
                                     <FaRegPlayCircle className="group-hover:ml-2"/>
                             </div>
                         </div>
-                        <div className="pt-[8rem] pl-4 w-full lg:max-w-[58%] lg:absolute lg:top-0 lg:left-[50%]">
+                        <div className="pt-[8rem] pl-4 w-full lg:max-w-[58%] lg:absolute lg:top-0 lg:left-[50%] z-50">
                             <img src="https://images.ctfassets.net/rz1oowkt5gyp/75rDABL8fyMtNLlUAtBxrg/c5e145977a86c41c47e17c69410c64f7/TrelloUICollage_4x.png?w=1140&fm=webp" alt="img" className="w-full h-auto"/>
                         </div>
                     </div>
                 </div>
+                <img src="https://images.ctfassets.net/rz1oowkt5gyp/7lTGeXbBRNRLaVk2MdBjtJ/99c266ed4cb8cc63bd0c388071f01ff6/white-wave-bg.svg" alt="" className="object-contain w-full h-auto absolute bottom-0 left-0 z-10" />
             </section>
             <Trello101 />
             <TrelloInAction />
