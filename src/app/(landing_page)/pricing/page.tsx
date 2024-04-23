@@ -1,4 +1,5 @@
-import FeaturesComparison from "@/components/FeaturesComparison";
+
+import FeaturesComparison from "@/components/landingpage_sections/FeaturesComparison";
 import FrequentlyAsked from "@/components/landingpage_sections/FrequentlyAsked";
 import Pricing from "@/components/landingpage_sections/Pricing";
 import Link from "next/link";

@@ -86,7 +86,6 @@ const pricingItems: PricingItemsType[]= [
     },
 ]
 export default function Pricing() {
-    // n*4 for order
     return (
         <section className="w-full">
             <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto p-4">

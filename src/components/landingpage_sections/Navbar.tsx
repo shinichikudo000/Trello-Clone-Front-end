@@ -5,6 +5,7 @@ import { useState } from "react";
 import FeaturesContent from "./FeaturesContent";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import SolutionsContent from "./SolutionsContent";
 
 export default function Navbar() {
     const [accordion, setAccordion] = useState(null)
@@ -44,7 +45,7 @@ export default function Navbar() {
         },
     ]
     return (
-        <header className="fixed w-full z-50">
+        <header className="fixed w-[100vw] z-50">
             <div className={`w-full lg:hover:shadow-navShadow lg:hover:bg-white h-[70px] lg:h-[60px] 
                 ${accordion !== null ? 'shadow-navShadow bg-white' : ''} 
                 ${pathname === '/pricing' ? 'bg-transparent' : 'bg-white'}
@@ -85,7 +86,8 @@ export default function Navbar() {
             </div>
             <AnimatePresence>
                 <div className="w-full bg-white shadow-navContentShadow hidden lg:block">
-                        { accordion === 'Features' && <FeaturesContent />}
+                    {accordion === 'Features' && <FeaturesContent />}
+                    {accordion === 'Solutions' && <SolutionsContent />}
                 </div>
             </AnimatePresence>
         </header>

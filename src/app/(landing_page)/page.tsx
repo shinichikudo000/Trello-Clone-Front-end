@@ -12,14 +12,14 @@ import { FaRegPlayCircle } from "react-icons/fa";
 
 export default function LandingPage() {
     return (
-        <>  
+        <>
             <section className="w-full">
                 <div className="bg-[#DEEBFF] w-full pt-[5rem] px-4 pb-4 scroll-mt-[72px] flex justify-center">
                     Accelerate your team's work with Atlassian Intelligence {'\uD83E\uDD16'} (AI) features now in beta!&nbsp;<Link href={''} className="underline text-blueButton">Learn more</Link>.
                 </div>
             </section>
             <section className="w-full bg-gradient-to-r from-[#5243AA] to-[#ED50B4] relative">
-                <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-[1rem] z-20">
+                <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-[1rem]">
                     <div className="w-full lg:flex relative">
                         <div className="py-[8rem] px-4 w-full lg:w-1/2 text-center lg:text-start text-wrap text-white">
                             <h1 className="text-[32px] lg:text-[48px] md:text-[44px] mb-2 md:leading-normal lg:leading-tight">Trello brings all your tasks, teammates, and tools together</h1>
@@ -33,12 +33,12 @@ export default function LandingPage() {
                                     <FaRegPlayCircle className="group-hover:ml-2"/>
                             </div>
                         </div>
-                        <div className="pt-[8rem] pl-4 w-full lg:max-w-[58%] lg:absolute lg:top-0 lg:left-[50%] z-50">
+                        <div className="pt-[8rem] pl-4 w-full lg:max-w-[58%] lg:absolute lg:top-0 lg:left-[50%] z-10">
                             <img src="https://images.ctfassets.net/rz1oowkt5gyp/75rDABL8fyMtNLlUAtBxrg/c5e145977a86c41c47e17c69410c64f7/TrelloUICollage_4x.png?w=1140&fm=webp" alt="img" className="w-full h-auto"/>
                         </div>
                     </div>
                 </div>
-                <img src="https://images.ctfassets.net/rz1oowkt5gyp/7lTGeXbBRNRLaVk2MdBjtJ/99c266ed4cb8cc63bd0c388071f01ff6/white-wave-bg.svg" alt="" className="object-contain w-full h-auto absolute bottom-0 left-0 z-10" />
+                <img src="https://images.ctfassets.net/rz1oowkt5gyp/7lTGeXbBRNRLaVk2MdBjtJ/99c266ed4cb8cc63bd0c388071f01ff6/white-wave-bg.svg" alt="" className="object-contain w-full h-auto absolute bottom-0 left-0 z-0" />
             </section>
             <Trello101 />
             <TrelloInAction />
@@ -56,7 +56,7 @@ export default function LandingPage() {
             </section>
             <DifferentVision />
             <WaysToGrow />
-            <section className="w-full">
+            <section className="w-full bg-gradient-to-b from-[#E6FCFF] to-[#FFFFFF]">
                 <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4">
                     <div className="w-full pt-[5rem] pb-[3rem] px-4 flex justify-center">
                         <div className="w-[83.333%] flex flex-col items-center">
@@ -66,8 +66,8 @@ export default function LandingPage() {
                         </div>
                     </div>
                 </div>
+                <Pricing />
             </section>
-            <Pricing />
             <section className="w-full mt-12">
                 <div className="sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] mx-auto px-4 flex justify-center">
                     <div className="w-full px-4 pt-4 pb-12 md:pb-[5rem] lg:mx-auto lg:w-[83.33%]">
