@@ -5,3 +5,10 @@ export interface featuresComparisonItemsType {
     link?: string,
     includedPlans: string[]
 }
+
+export interface navBarLinksType {
+    name: string;
+    description: string;
+    link: string;
+    svg?: React.ReactNode
+}
