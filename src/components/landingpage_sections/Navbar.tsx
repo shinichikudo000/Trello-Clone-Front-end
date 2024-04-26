@@ -26,6 +26,9 @@ export default function Navbar() {
             } else if (accordion != id && body.getAttribute("data-accordion") === 'open') {
                 setAccordion(id)
             }
+        } else {
+            body.setAttribute("data-accordion", 'close')
+            setAccordion(null)
         }
     }
     //if the window witdh is less than 990 the  body data-accordion will be close
@@ -47,13 +50,13 @@ export default function Navbar() {
         },
     ]
     return (
-        <header className={`fixed w-[100vw] z-50 h-full ${accordion !== null ? 'bg-[#091E4280]': ''}`}>
+        <header className={`fixed w-[100vw] z-50 ${accordion !== null ? 'bg-[#091E4280] h-full': ''}`}>
             <div className={`w-full lg:hover:shadow-navShadow lg:hover:bg-white h-[70px] lg:h-[60px] 
                 ${accordion !== null ? 'shadow-navShadow bg-white' : ''} 
                 ${pathname === '/pricing' ? 'bg-transparent' : 'bg-white'}
                 `}>
                 <div className="max-w-[1320px] mx-auto flex items-stretch h-full">
-                    <Link href={''}>
+                    <Link href={'/'}>
                         <img src={trelloImage.src} alt="trello" className="h-full"/>
                     </Link>
                     <div className="hidden lg:flex h-full items-center justify-center">
