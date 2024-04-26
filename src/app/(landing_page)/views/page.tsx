@@ -1,6 +1,57 @@
+import AlternateContent from "@/components/landingpage_sections/AlternateContent";
+import { alternateContentPage } from "@/helpers/types";
 import Link from "next/link";
 
 export default function ViewsPage() {
+    const viewsContent: alternateContentPage[] = [
+        {
+            name: 'Success starts with a Trello board',
+            description: 'Similar to a Kanban board, a Trello board is the easiest way to go from idea to action. Plan projects and break down each step of the way to getting things done. Instantly see the status of every task and celebrate each accomplishment. Project management has never been so powerful, yet so fun.',
+            image: '//images.ctfassets.net/rz1oowkt5gyp/2VMobYBznJ6iYVv9N3mnsA/4577db5007dcff235d05f6a463db532d/Board_View_Illo_4.svg',
+        },
+        {
+            name: 'Hit deadlines every time with Timeline',
+            description: 'Stay on top of every sprint and stay on track of every goal with Timeline. Use Timeline to see how all of the moving parts piece together over time. Drag and drop to make start and due date adjustments on the fly as priorities shift and needs change. Quickly get a glimpse of what’s coming down the pipeline and identify any gaps that might impede your team’s progress.',
+            image: '//images.ctfassets.net/rz1oowkt5gyp/2VMobYBznJ6iYVv9N3mnsA/4577db5007dcff235d05f6a463db532d/Board_View_Illo_4.svg',
+            linkTag: 'Learn more about Timeline view',
+            link: '',
+        }, 
+        {
+            name: 'Use Calendar to stay on top of tasks',
+            description: 'Start each day without any surprises. Whether scheduling a quarterly editorial calendar or staying on top of your to-dos, Calendar is like a crystal ball giving you a clear vision of what work lies ahead. Sync any third party calendars to maintain the perfect work-life balance.',
+            image: '//images.ctfassets.net/rz1oowkt5gyp/5TCPbikbixthhEiPqdmxMg/57c19b203ce7f79e1fdb183e40b554f6/Calendar_View_Illo_7.svg',
+            linkTag: 'Learn more about Calendar view',
+            link: '',
+        }, 
+        {
+            name: 'Get actionable insigths with Dashboard',
+            description: 'Bring a bird’s-eye view to projects and processes with Dashboard so that you can manage workloads and prevent bottlenecks before they begin. Visualize key metrics like due dates, assigned cards, and cards per list to keep stakeholders aligned and confidence running high.',
+            image: '//images.ctfassets.net/rz1oowkt5gyp/5fGmbGQU0lwsIbauhq9DQ2/f6936ca0d10668e1503f1cd863aca0da/Dashboard_View_Illo_5.svg',
+            linkTag: 'Learn more about Dashboard view',
+            link: '',
+        }, 
+        {
+            name: 'See it like a spreadsheet with Table',
+            description: 'Dial in on all of the work that is happening across a board with the Table view. View your work in a convenient spreadsheet-styled list that can be sorted and filtered to drill down to exactly the cards you need to see.',
+            image: '//images.ctfassets.net/rz1oowkt5gyp/2siptXBVrLC3hmtvpxxURN/92393ce358eec43b1f7a1049a60f7fe5/Table_View_Illo_8.svg',
+            linkTag: 'Learn more about Table view',
+            link: '',
+        }, 
+        {
+            name: 'Find a new sense of direction with Map',
+            description: 'Wherever you are in the world, use Trello’s Map view to display location-based data in context on an interactive map. Whether tracking real estate properties, planning an event, or organizing work in the field, Map will make sure your team doesn’t lose their way.',
+            image: '//images.ctfassets.net/rz1oowkt5gyp/7GsCpQQCUgMDWhWNZBCKkM/304325abf1d2f0af44ea6686660734ab/Map_View_Illo_2.svg',
+            linkTag: 'Learn more about Map view',
+            link: '',
+        }, 
+        {
+            name: 'Manage work across multiple boards',
+            description: 'Create as many custom overviews as you need across Workspace boards. Use the Workspace Table and Calendar views to keep track of minor details or large projects.',
+            image: '//images.ctfassets.net/rz1oowkt5gyp/IzP5x6h6ah349q3zW89n8/0b0cc5b8660b2b36bd7324e5d5f9e780/UI_Illo__Workspace_Views_2x.png?w=540',
+            linkTag: 'Learn more about Workspace views',
+            link: '',
+        }, 
+    ]
     return (
         <> 
             <section className="w-full bg-gradient-to-t from-[#FFF2FB] to-[#FFFFFF]">
@@ -28,82 +79,7 @@ export default function ViewsPage() {
                     <div className="px-4 pt-[5rem] pb-[3rem] w-full text-center">
                         <h1 className="text-2xl md:text-4xl font-bold">See what views can do for you</h1>
                     </div>
-                    <div className="w-full md:flex">
-                        <div className="px-4 pt-[5rem] pb-4 md:pb-[3rem] w-full md:w-1/2">
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/2VMobYBznJ6iYVv9N3mnsA/4577db5007dcff235d05f6a463db532d/Board_View_Illo_4.svg" alt="" className="w-full h-auto object-contain" />
-                        </div>
-                        <div className="w-full md:w-1/2 lg:w-[44%] lg:ml-auto px-4 pt-4 pb-[3rem] md:pt-[5rem]  ">
-                            <h2 className="text-2xl md:text-4xl mb-2 font-medium">Success starts with a Trello board</h2>
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/5Ub9YCKx371qMXE7jomyBJ/3d701450a4b9a98379c67b1ca3b19b2d/gradient_bar.svg" alt="divider" className="my-8"/>
-                            <p className="text-lg mb-6">Similar to a Kanban board, a Trello board is the easiest way to go from idea to action. Plan projects and break down each step of the way to getting things done. Instantly see the status of every task and celebrate each accomplishment. Project management has never been so powerful, yet so fun.</p>
-                        </div>
-                    </div>
-                    <div className="w-full md:flex">
-                        <div className="px-4 pt-[5rem] pb-4 md:pb-[3rem] w-full md:w-1/2 md:order-2">
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/2VMobYBznJ6iYVv9N3mnsA/4577db5007dcff235d05f6a463db532d/Board_View_Illo_4.svg" alt="" className="w-full h-auto object-contain" />
-                        </div>
-                        <div className="md:order-1 w-full md:w-1/2 lg:w-[44%] lg:mr-auto px-4 pt-4 pb-[3rem] md:pt-[5rem]">
-                            <h2 className="text-2xl md:text-4xl mb-2 font-medium">Hit deadlines every time with Timeline</h2>
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/5Ub9YCKx371qMXE7jomyBJ/3d701450a4b9a98379c67b1ca3b19b2d/gradient_bar.svg" alt="divider" className="my-8"/>
-                            <p className="text-lg mb-6">Stay on top of every sprint and stay on track of every goal with Timeline. Use Timeline to see how all of the moving parts piece together over time. Drag and drop to make start and due date adjustments on the fly as priorities shift and needs change. Quickly get a glimpse of what’s coming down the pipeline and identify any gaps that might impede your team’s progress.</p>
-                            <Link href={''} className="underline text-blueButton text-lg">Learn more about Timeline view</Link>
-                        </div>
-                    </div>
-                    <div className="w-full md:flex">
-                        <div className="px-4 pt-[5rem] pb-4 md:pb-[3rem] w-full md:w-1/2">
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/5TCPbikbixthhEiPqdmxMg/57c19b203ce7f79e1fdb183e40b554f6/Calendar_View_Illo_7.svg" alt="" className="w-full h-auto object-contain" />
-                        </div>
-                        <div className="w-full md:w-1/2 lg:w-[44%] lg:ml-auto px-4 pt-4 pb-[3rem] md:pt-[5rem]">
-                            <h2 className="text-2xl md:text-4xl mb-2 font-medium">Use Calendar to stay on top of tasks</h2>
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/5Ub9YCKx371qMXE7jomyBJ/3d701450a4b9a98379c67b1ca3b19b2d/gradient_bar.svg" alt="divider" className="my-8"/>
-                            <p className="text-lg mb-6">Start each day without any surprises. Whether scheduling a quarterly editorial calendar or staying on top of your to-dos, Calendar is like a crystal ball giving you a clear vision of what work lies ahead. Sync any third party calendars to maintain the perfect work-life balance.</p>
-                            <Link href={''} className="underline text-blueButton text-lg">Learn more about Calendar view</Link>
-                        </div>
-                    </div>
-                    <div className="w-full md:flex">
-                        <div className="px-4 pt-[5rem] pb-4 md:pb-[3rem] w-full md:w-1/2 md:order-2">
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/5fGmbGQU0lwsIbauhq9DQ2/f6936ca0d10668e1503f1cd863aca0da/Dashboard_View_Illo_5.svg" alt="" className="w-full h-auto object-contain" />
-                        </div>
-                        <div className="md:order-1 w-full md:w-1/2 lg:w-[44%] lg:mr-auto px-4 pt-4 pb-[3rem] md:pt-[5rem]">
-                            <h2 className="text-2xl md:text-4xl mb-2 font-medium">Get actionable insigths with Dashboard</h2>
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/5Ub9YCKx371qMXE7jomyBJ/3d701450a4b9a98379c67b1ca3b19b2d/gradient_bar.svg" alt="divider" className="my-8"/>
-                            <p className="text-lg mb-6">Bring a bird’s-eye view to projects and processes with Dashboard so that you can manage workloads and prevent bottlenecks before they begin. Visualize key metrics like due dates, assigned cards, and cards per list to keep stakeholders aligned and confidence running high.</p>
-                            <Link href={''} className="underline text-blueButton text-lg">Learn more about Dashboard view</Link>
-                        </div>
-                    </div>
-                    <div className="w-full md:flex">
-                        <div className="px-4 pt-[5rem] pb-4 md:pb-[3rem] w-full md:w-1/2">
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/2siptXBVrLC3hmtvpxxURN/92393ce358eec43b1f7a1049a60f7fe5/Table_View_Illo_8.svg" alt="" className="w-full h-auto object-contain" />
-                        </div>
-                        <div className="w-full md:w-1/2 lg:w-[44%] lg:ml-auto px-4 pt-4 pb-[3rem] md:pt-[5rem]">
-                            <h2 className="text-2xl md:text-4xl mb-2 font-medium">See it like a spreadsheet with Table</h2>
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/5Ub9YCKx371qMXE7jomyBJ/3d701450a4b9a98379c67b1ca3b19b2d/gradient_bar.svg" alt="divider" className="my-8"/>
-                            <p className="text-lg mb-6">Dial in on all of the work that is happening across a board with the Table view. View your work in a convenient spreadsheet-styled list that can be sorted and filtered to drill down to exactly the cards you need to see.</p>
-                            <Link href={''} className="underline text-blueButton text-lg">Learn more about Table view</Link>
-                        </div>
-                    </div>
-                    <div className="w-full md:flex">
-                        <div className="px-4 pt-[5rem] pb-4 md:pb-[3rem] w-full md:w-1/2 md:order-2">
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/7GsCpQQCUgMDWhWNZBCKkM/304325abf1d2f0af44ea6686660734ab/Map_View_Illo_2.svg" alt="" className="w-full h-auto object-contain" />
-                        </div>
-                        <div className="md:order-1 w-full md:w-1/2 lg:w-[44%] lg:mr-auto px-4 pt-4 pb-[3rem] md:pt-[5rem]">
-                            <h2 className="text-2xl md:text-4xl mb-2 font-medium">Find a new sense of direction with Map</h2>
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/5Ub9YCKx371qMXE7jomyBJ/3d701450a4b9a98379c67b1ca3b19b2d/gradient_bar.svg" alt="divider" className="my-8"/>
-                            <p className="text-lg mb-6">Wherever you are in the world, use Trello’s Map view to display location-based data in context on an interactive map. Whether tracking real estate properties, planning an event, or organizing work in the field, Map will make sure your team doesn’t lose their way.</p>
-                            <Link href={''} className="underline text-blueButton text-lg">Learn more about Map view</Link>
-                        </div>
-                    </div>
-                    <div className="w-full md:flex">
-                        <div className="px-4 pt-[5rem] pb-4 md:pb-[3rem] w-full md:w-1/2">
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/IzP5x6h6ah349q3zW89n8/0b0cc5b8660b2b36bd7324e5d5f9e780/UI_Illo__Workspace_Views_2x.png?w=540" alt="" className="w-full h-auto object-contain" />
-                        </div>
-                        <div className="w-full md:w-1/2 lg:w-[44%] lg:ml-auto px-4 pt-4 pb-[3rem] md:pt-[5rem]">
-                            <h2 className="text-2xl md:text-4xl mb-2 font-medium">Manage work across multiple boards</h2>
-                            <img src="//images.ctfassets.net/rz1oowkt5gyp/5Ub9YCKx371qMXE7jomyBJ/3d701450a4b9a98379c67b1ca3b19b2d/gradient_bar.svg" alt="divider" className="my-8"/>
-                            <p className="text-lg mb-6">Create as many custom overviews as you need across Workspace boards. Use the Workspace Table and Calendar views to keep track of minor details or large projects.</p>
-                            <Link href={''} className="underline text-blueButton text-lg">Learn more about Workspace views</Link>
-                        </div>
-                    </div>
+                    <AlternateContent contents={viewsContent} />
                 </div>
             </section>
             <section className="w-full bg-gradient-to-b from-[#DEEBFF] to-[#FFFFFF]">
