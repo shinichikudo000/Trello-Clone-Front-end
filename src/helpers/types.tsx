@@ -12,3 +12,14 @@ export interface navBarLinksType {
     link: string;
     svg?: React.ReactNode
 }
+
+export interface alternateContentPage {
+    name: string;
+    description: string;
+    image: string;
+    link?: string;
+    linkTag?: string;
+    accordionName?: string;
+    accordionDescription?: string;
+    accordionList?: string[];
+}

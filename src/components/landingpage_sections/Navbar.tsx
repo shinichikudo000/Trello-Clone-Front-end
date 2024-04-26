@@ -53,7 +53,7 @@ export default function Navbar() {
         <header className={`fixed w-[100vw] z-50 ${accordion !== null ? 'bg-[#091E4280] h-full': ''}`}>
             <div className={`w-full lg:hover:shadow-navShadow lg:hover:bg-white h-[70px] lg:h-[60px] 
                 ${accordion !== null ? 'shadow-navShadow bg-white' : ''} 
-                ${pathname === '/pricing' ? 'bg-transparent' : 'bg-white'}
+                ${pathname === ('/pricing' || '/butler-automation') ? 'bg-transparent' : 'bg-white'}
                 `}>
                 <div className="max-w-[1320px] mx-auto flex items-stretch h-full">
                     <Link href={'/'}>
