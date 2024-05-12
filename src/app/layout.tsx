@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className} data-accordion="close">
+      <body className="dark" data-accordion="close">
         {children}
       </body>
     </html>

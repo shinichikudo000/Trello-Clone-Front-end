@@ -1,3 +1,5 @@
+import NavbarApp from "@/components/application_components/NavbarApp"
+
 export default function ApplicationPageLayout({
     children
 }: {
@@ -5,6 +7,7 @@ export default function ApplicationPageLayout({
 }) {
     return (
         <>
+            <NavbarApp/>
             {children}
         </>
     )
