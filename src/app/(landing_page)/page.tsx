@@ -15,7 +15,7 @@ export default function LandingPage() {
         <>
             <section className="w-full">
                 <div className="bg-[#DEEBFF] w-full pt-[5rem] px-4 pb-4 scroll-mt-[72px] flex justify-center">
-                    Accelerate your team's work with Atlassian Intelligence {'\uD83E\uDD16'} (AI) features now in beta!&nbsp;<Link href={''} className="underline text-blueButton">Learn more</Link>.
+                    Accelerate your team&apos;s work with Atlassian Intelligence {'\uD83E\uDD16'} (AI) features now in beta!&nbsp;<Link href={''} className="underline text-blueButton">Learn more</Link>.
                 </div>
             </section>
             <section className="w-full bg-gradient-to-r from-[#5243AA] to-[#ED50B4] relative">
@@ -23,7 +23,7 @@ export default function LandingPage() {
                     <div className="w-full lg:flex relative">
                         <div className="py-[8rem] px-4 w-full lg:w-1/2 text-center lg:text-start text-wrap text-white">
                             <h1 className="text-[32px] lg:text-[48px] md:text-[44px] mb-2 md:leading-normal lg:leading-tight">Trello brings all your tasks, teammates, and tools together</h1>
-                            <p className="mb-6 text-xl">Keep everything in the same place-even if your team isn't.</p>
+                            <p className="mb-6 text-xl">Keep everything in the same place-even if your team isn&apos;t.</p>
                             <div className="flex gap-4 lg:flex lg:justify-start justify-center lg:flex-wrap">
                                 <Input placeholder="Email" type="email" className="p-6 w-[300px] text-base border-[#DFE1E6] focus:border-white hidden md:flex"/>
                                 <button className="p-3 bg-blueButton hover:bg-blueButtonHover rounded-md text-base grow md:grow-0 mb-6">Sign up - it's free</button>
