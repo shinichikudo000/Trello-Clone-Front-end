@@ -19,7 +19,7 @@ export default function Footer() {
                         <ul className="ml-4 lg:flex w-full Lg:flex-wrap">
                             <li className="border-t border-[#505F79] lg:border-0 my-4 py-4 lg:m-0 lg:p-4 lg:hover:bg-[#344563] hover:underline lg:hover:no-underline lg:grow lg:basis-0 lg:shrink-0 lg:text-wrap">
                                 <h3 className="pb-2 text-base">About trello</h3>
-                                <p className="text-xs">What's behind the boards.</p>
+                                <p className="text-xs">What&apos;s behind the boards.</p>
                             </li>
                             <li className="border-t border-[#505F79] lg:border-0 mb-4 pb-4 lg:m-0 lg:p-4 lg:hover:bg-[#344563] hover:underline lg:hover:no-underline lg:grow lg:basis-0 lg:shrink-0 lg:text-wrap">
                                 <h3 className="pb-2 text-base">Jobs</h3>

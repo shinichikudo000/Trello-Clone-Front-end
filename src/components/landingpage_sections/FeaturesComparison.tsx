@@ -80,7 +80,7 @@ export default function FeaturesComparison() {
                 </div>
             </div>
             <div className="w-full mt-16 flex flex-col items-center">
-                <h3 className="text-2xl font-medium mb-2">Didn't find what you were looking for?</h3>
+                <h3 className="text-2xl font-medium mb-2">Didn&apos;t find what you were looking for?</h3>
                 <button className="text-base px-4 py-3 border-[#0065FF] border rounded-md hover:bg-[#DEEBFF]">Make a suggestion</button>
             </div>
         </section>

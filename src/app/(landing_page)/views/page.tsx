@@ -66,7 +66,7 @@ export default function ViewsPage() {
                             <Link href={''} className="inline-block p-3 border border-[#D62688] bg-white text-[#172B4D] text-base rounded-md">Try for views for free!</Link>
                         </div>
                         <div className="w-full text-center lg:text-start">
-                            <Link href={'/pricing'} className="underline text-blueButton text-base">Learn more about Trello's plans and pricing.</Link>
+                            <Link href={'/pricing'} className="underline text-blueButton text-base">Learn more about Trello&apos;s plans and pricing.</Link>
                         </div>
                     </div>
                     <div className="w-full h-full lg:w-[60vw] order-1 lg:order-2 pt-[8rem] lg:pt-[10rem] px-4 lg:pr-0 lg:pb-[5rem] lg:absolute left-[50%] top-0">

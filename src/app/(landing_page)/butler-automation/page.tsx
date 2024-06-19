@@ -55,12 +55,12 @@ export default function ButlerAutomationPage() {
                     <div className="w-full md:w-1/2 px-4 pb-[5rem] pt-[1rem] md:pt-[8rem] md:order-1 text-white text-center md:text-start">
                         <h1 className="text-4xl md:text-[44px] lg:text-[48px] mb-2">Automate your workflow with Butler</h1>
                         <p className="text-xl mb-6">Powerful no-code automation is built into every Trello board. With Butler, you can focus on the work that matters most and let the robots do the rest.</p>
-                        <p className="text-xl mb-6">Start automating today - It's free!</p>
+                        <p className="text-xl mb-6">Start automating today - It&apos;s free!</p>
                         <div>
                             <Link href={''} className="p-3 bg-white rounded-md text-base border border-[#6554C0] text-black inline-block mb-4">Try Butler</Link>
                         </div>
                         <div>
-                            <Link href={''} className="underline text-base inline-block">Learn more about Trello's plan and pricing.</Link>
+                            <Link href={''} className="underline text-base inline-block">Learn more about Trello&apos;s plan and pricing.</Link>
                         </div>
                     </div>
                 </div>

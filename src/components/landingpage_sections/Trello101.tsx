@@ -31,7 +31,7 @@ export default function Trello101() {
                     <div className="text-wrap w-full md:max-w-[60%] p-4">
                             <h3 className="text-base font-medium mb-2">TRELLO 101</h3>
                             <h1 className="text-2xl md:text-4xl pb-2 md:pb-4 mb-2">A productivity powerhouse</h1>
-                            <p className="text-xl">Simple, flexible, and powerful. All it takes are boards, lists, and cards to get a clear view of who's doing what and what needs to get done. Learn more in our &nbsp;<Link href={''} className="underline text-blueButton">guide for getting started.</Link></p>
+                            <p className="text-xl">Simple, flexible, and powerful. All it takes are boards, lists, and cards to get a clear view of who&apos;s doing what and what needs to get done. Learn more in our &nbsp;<Link href={''} className="underline text-blueButton">guide for getting started.</Link></p>
                     </div>
                 </div>
                 <div className="w-full px-4 pt-4 pb-[5rem] flex flex-col lg:flex-row">

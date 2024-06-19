@@ -46,7 +46,7 @@ export default function PlansContent() {
                 <div className="w-[240px] lg:w-[285px] flex flex-col gap-4 mr-auto ml-leftPurpleContent items-start">
                     <div className="w-full flex flex-wrap flex-col">
                         <h3 className="w-full border-b-[1px] border-borderPurpleContent pb-4 text-base mb-4">Compare plans & pricing</h3>
-                        <p className="text-xs mb-2">Whether you're a team of 2 or 2,000, Trello's flexible pricing model means you only pay for what you need</p>
+                        <p className="text-xs mb-2">Whether you&apos;re a team of 2 or 2,000, Trello&apos;s flexible pricing model means you only pay for what you need</p>
                     </div>
                     <Link href={''} className="pt-[0.7rem] px-4 pb-[0.8rem] rounded-md bg-white border-buttonPurpleBorder border-[1px] text-base text-[#172b4d] hover:bg-[#eae6ff]">Check out the Trello blog</Link>
                 </div>

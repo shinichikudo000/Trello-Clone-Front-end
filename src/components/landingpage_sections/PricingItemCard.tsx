@@ -90,7 +90,7 @@ export default function PricingItemCard({
                                 <span className="flex justify-center items-center">
                                     {openInclusion === false ? <FaPlus /> : <FaMinus />}
                                 </span>
-                                    See what's included
+                                    See what&apos;s included
                             </h2>
                         </div>
                         <div className={`price-order-${(index + 17).toString()}

@@ -11,7 +11,7 @@ export default function GetStarted() {
                     </div>
                     <div className="w-full flex gap-4 justify-center">
                         <Input placeholder="Email" type="email" className="p-6 w-[376px] text-base border-[#DFE1E6] focus:border-white hidden md:flex"/>
-                        <Link href={""} className="grow md:grow-0 text-base bg-blueButton p-4 rounded-md hover:bg-blueButtonHover inline-block text-center md:text-nowrap">Sign up - it's free</Link>
+                        <Link href={""} className="grow md:grow-0 text-base bg-blueButton p-4 rounded-md hover:bg-blueButtonHover inline-block text-center md:text-nowrap">Sign up - it&apos;s free</Link>
                     </div>
                 </div>
             </div>

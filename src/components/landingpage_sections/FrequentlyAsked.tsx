@@ -45,8 +45,8 @@ export default function FrequentlyAsked() {
                 </div>
                 <div className="w-full">
                     {
-                        questions.map((question) => {
-                            return <QuestionItem question={question} />
+                        questions.map((question, index) => {
+                            return <QuestionItem key={index} question={question} />
                         })
                     }
                 </div>

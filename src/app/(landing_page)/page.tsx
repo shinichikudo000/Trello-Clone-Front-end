@@ -26,7 +26,7 @@ export default function LandingPage() {
                             <p className="mb-6 text-xl">Keep everything in the same place-even if your team isn&apos;t.</p>
                             <div className="flex gap-4 lg:flex lg:justify-start justify-center lg:flex-wrap">
                                 <Input placeholder="Email" type="email" className="p-6 w-[300px] text-base border-[#DFE1E6] focus:border-white hidden md:flex"/>
-                                <button className="p-3 bg-blueButton hover:bg-blueButtonHover rounded-md text-base grow md:grow-0 mb-6">Sign up - it's free</button>
+                                <button className="p-3 bg-blueButton hover:bg-blueButtonHover rounded-md text-base grow md:grow-0 mb-6">Sign up - it&apos;s free</button>
                             </div>
                             <div className="group flex gap-2 justify-center lg:justify-start">
                                     <Link href={''} className="underline">Watch video</Link>

@@ -7,7 +7,7 @@ export default function WaysToGrow() {
                 <div className="w-full text-start md:w-[58%] p-4">
                     <h3 className="text-base font-bold mb-2">POWERFUL WAYS TO GROW</h3>
                     <h1 className="text-2xl md:text-4xl font-bold file:mb-6">Do more with Trello</h1>
-                    <p className="text-xl">Trello's intuitive features give any team the ability to quickly set up and customize workflows for just about anything</p>
+                    <p className="text-xl">Trello&apos;s intuitive features give any team the ability to quickly set up and customize workflows for just about anything</p>
                 </div>
                 <div className="w-full md:flex md:flex-wrap md:justify-around md:items-stretch">
                     <div className="p-4 w-full md:w-1/2 lg:w-1/3">

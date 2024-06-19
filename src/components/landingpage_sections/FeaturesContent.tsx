@@ -46,7 +46,7 @@ export default function FeaturesContent() {
                 <div className="w-[240px] lg:w-[285px] flex flex-col gap-4 mr-auto ml-leftPurpleContent items-start">
                     <div className="w-full flex flex-wrap flex-col">
                         <h3 className="w-full border-b-[1px] border-borderPurpleContent pb-4 text-base mb-4">Meet Trello</h3>
-                        <p className="text-xs mb-2">Trello makes it Easy for your team to get work done. No matter the project, workflow, or type of team, trello can help keep things organized, It's simple-sign-up, create a board, and you're off! Productivity awaits</p>
+                        <p className="text-xs mb-2">Trello makes it Easy for your team to get work done. No matter the project, workflow, or type of team, trello can help keep things organized, It&apos;s simple-sign-up, create a board, and you&apos;re off! Productivity awaits</p>
                     </div>
                     <Link href={''} className="pt-[0.7rem] px-4 pb-[0.8rem] rounded-md bg-white border-buttonPurpleBorder border-[1px] text-base text-[#172b4d] hover:bg-[#eae6ff]">Check out Trello</Link>
                 </div>

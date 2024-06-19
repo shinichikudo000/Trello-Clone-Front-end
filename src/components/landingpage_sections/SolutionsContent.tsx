@@ -87,7 +87,7 @@ export default function SolutionsContent() {
                         {
                             useCaseLinks.map((link, index) => {
                                 return (
-                                    <li className="w-full group py-4">
+                                    <li key={index} className="w-full group py-4">
                                         <Link key={index} href={link.link} className="w-full">
                                             <h3 className="text-base text-[#172B4D] flex mb-2">{link.name}
                                                 <span className="hidden group-hover:block">
