@@ -12,7 +12,7 @@ export default function AlternateContent({contents}: {
         <>
             {
                 contents.map((content, index) => (
-                    <div className="w-full md:flex">
+                    <div key={index} className="w-full md:flex">
                         <div className={`px-4 pt-[5rem] pb-4 md:pb-[3rem] w-full md:w-1/2 ${index % 2 !== 0 ? 'md:order-2': ''}`}>
                             <img src={content.image} alt={content.name} className="w-full h-auto object-contain" />
                         </div>
@@ -35,8 +35,8 @@ export default function AlternateContent({contents}: {
                                                     { content.accordionDescription && <p className="text-lg mb-6">{content.accordionDescription}</p>}
                                                     <ul className="w-full ml-6 p-4 list-disc">
                                                         {
-                                                            content.accordionList?.map((list) => (
-                                                                <li className="text-lg">{list}</li>
+                                                            content.accordionList?.map((list, index) => (
+                                                                <li key={index} className="text-lg">{list}</li>
                                                             ))
                                                         }
                                                     </ul>

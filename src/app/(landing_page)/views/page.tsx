@@ -88,7 +88,7 @@ export default function ViewsPage() {
                         <h2 className="text-2xl md:text-4xl mb-2 font-medium">Bring powerful new views to your team’s work</h2>
                         <p className="text-xl mb-6">Start a free trial today</p>
                         <div>
-                            <Link href={''} className="inline-block bg-white border border-blueButton p-3 text-basse text-[#172B4D] hover:bg-[#DEEBFF] rounded-md">I'm ready</Link>
+                            <Link href={''} className="inline-block bg-white border border-blueButton p-3 text-basse text-[#172B4D] hover:bg-[#DEEBFF] rounded-md">I&apos;m ready</Link>
                         </div>
                     </div>
                 </div>
